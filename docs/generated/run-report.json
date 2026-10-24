@@ -1,0 +1,33 @@
+{
+  "input_lines": 1000,
+  "valid_events": 881,
+  "windows": 6,
+  "published_events": 220,
+  "pending_window_events": 649,
+  "late_events_dropped": 12,
+  "watermark": "2026-10-24T17:04:00",
+  "feature_rows": 103,
+  "dead_letters": 119,
+  "dead_letter_reasons": [
+    {
+      "reason": "unparseable_json",
+      "rows": 43
+    },
+    {
+      "reason": "invalid_event_type",
+      "rows": 24
+    },
+    {
+      "reason": "negative_price",
+      "rows": 23
+    },
+    {
+      "reason": "text_too_long",
+      "rows": 15
+    },
+    {
+      "reason": "rating_out_of_range",
+      "rows": 14
+    }
+  ]
+}
