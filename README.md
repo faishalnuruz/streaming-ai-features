@@ -117,12 +117,14 @@ raw = (spark.readStream.format("kafka")
 The file source is used because it makes the semantics testable: `availableNow` drains a directory
 and terminates, so the correctness tests get deterministic answers in seconds instead of requiring
 a broker and a sleep. That trade-off is deliberate, and the operator used in production
-(`trigger(availableNow=True)`) is the same one the tests use.
+(`trigger(availableNow=True)`) is the same one the tests use. The real CDC mechanisms — MySQL
+binlog streaming and PostgreSQL logical replication slots — are demonstrated end to end in
+[sikt-mini-lakehouse](https://github.com/faishalnuruz/sikt-mini-lakehouse).
 
 ## Tests
 
 ```bash
-.venv/bin/python -m pytest -q     # 24 passed (~5 min, one shared JVM)
+.venv/bin/python -m pytest -q     # 24 passed (~5 min on a quiet machine, one shared JVM)
 .venv/bin/ruff check .
 ```
 
