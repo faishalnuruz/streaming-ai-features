@@ -1,4 +1,5 @@
 # Streaming Event Pipeline with AI-Ready Features
+[![CI](https://github.com/faishalnuruz/streaming-ai-features/actions/workflows/ci.yml/badge.svg)](https://github.com/faishalnuruz/streaming-ai-features/actions/workflows/ci.yml) [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 Tracker events in, trustworthy windowed metrics and per-session vectors out — with malformed records
 quarantined and late records *counted* instead of silently discarded.
